@@ -1,7 +1,7 @@
-package org.java.licenta.managementstocuri.service;
+package org.java.licenta.managementstocuri.Produse.service;
 
-import org.java.licenta.managementstocuri.model.Produs;
-import org.java.licenta.managementstocuri.repository.ProdusRepository;
+import org.java.licenta.managementstocuri.Produse.model.Produs;
+import org.java.licenta.managementstocuri.Produse.repository.ProdusRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

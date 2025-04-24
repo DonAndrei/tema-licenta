@@ -1,6 +1,6 @@
-package org.java.licenta.managementstocuri.repository;
+package org.java.licenta.managementstocuri.Produse.repository;
 
-import org.java.licenta.managementstocuri.model.Produs;
+import org.java.licenta.managementstocuri.Produse.model.Produs;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -19,8 +19,7 @@ public class ProdusRepository {
                 new Produs(
                         rs.getInt("id"),
                         rs.getString("nume"),
-                        rs.getInt("ean"),
-                        rs.getInt("lot"),
+                        rs.getString("descriere"),
                         rs.getInt("cantitate")
                 )
         );

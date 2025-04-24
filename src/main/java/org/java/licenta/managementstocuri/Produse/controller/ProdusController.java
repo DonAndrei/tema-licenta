@@ -1,7 +1,7 @@
-package org.java.licenta.managementstocuri.controller;
+package org.java.licenta.managementstocuri.Produse.controller;
 
-import org.java.licenta.managementstocuri.repository.ProdusRepository;
-import org.java.licenta.managementstocuri.model.Produs;
+import org.java.licenta.managementstocuri.Produse.repository.ProdusRepository;
+import org.java.licenta.managementstocuri.Produse.model.Produs;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

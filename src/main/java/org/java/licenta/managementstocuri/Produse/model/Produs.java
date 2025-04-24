@@ -1,12 +1,11 @@
-package org.java.licenta.managementstocuri.model;
+package org.java.licenta.managementstocuri.Produse.model;
 
 public class Produs {
     private int id;
     private String nume;
-    private int ean;
-    private int lot;
+    private String descriere;
     private int cantitate;
 
-    public Produs(int id, String nume, int ean,int lot, int cantitate) {
+    public Produs(int id, String nume, String descriere, int cantitate) {
     }
 }
