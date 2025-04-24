@@ -24,4 +24,9 @@ public class ProdusRepository {
                 )
         );
     }
+
+    public void save(Produs produs) {
+        String sql = "INSERT INTO produse (nume, descriere, cantitate) VALUES (?, ?, ?)";
+        jdbcTemplate.update(sql, produs.getNume(), produs.getDescriere(), produs.getCantitate());
+    }
 }

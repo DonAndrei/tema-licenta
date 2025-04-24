@@ -14,10 +14,10 @@ public class ProdusService {
         this.produsRepository = produsRepository;
     }
 
-    public List<Produs> getToateProduses() {
-        return produsRepository.findAll();
-    }
-
+//    public List<Produs> getToateProduses() {
+//        return produsRepository.findAll();
+//    }
+//
 //    public void adaugaProdus(Produs produs) {
 //        produsRepository.save(produs);
 //    }
