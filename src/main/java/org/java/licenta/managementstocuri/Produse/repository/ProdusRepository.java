@@ -15,7 +15,7 @@ public class ProdusRepository {
     }
 
     public List<Produs> findAll() {
-        return jdbcTemplate.query("SELECT * FROM produse", (rs, rowNum) ->
+        return jdbcTemplate.query("SELECT * FROM depozit.produse", (rs, rowNum) ->
                 new Produs(
                         rs.getInt("id"),
                         rs.getString("nume"),
@@ -26,7 +26,7 @@ public class ProdusRepository {
     }
 
     public void save(Produs produs) {
-        String sql = "INSERT INTO produse (nume, descriere, cantitate) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO depozit.produse (nume, descriere, cantitate) VALUES (?, ?, ?)";
         jdbcTemplate.update(sql, produs.getNume(), produs.getDescriere(), produs.getCantitate());
     }
 }
